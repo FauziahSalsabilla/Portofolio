@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Mahasiswa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Menambahkan Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #145a32, #a5d6a7);
+      color: #ffffff;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .card a {
+      color: #ffffff;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+      color: #c8e6c9;
+    }
+
+    .navbar {
+      background-color: #145a32; /* Sama dengan warna footer */
+    }
+
+    .navbar .navbar-toggler-icon {
+      background-color: #ffffff; /* Ikon toggle navbar berwarna putih */
+    }
+
+    .navbar a.nav-link {
+      color: #ffffff !important;
+    }
+
+    .navbar a.nav-link:hover {
+      color: #c8e6c9;
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .card {
+      background-color: #1b5e20;
+      border: none;
+      border-radius: 15px;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+      color: #ffffff;
+    }
+
+    h1, h2 {
+      color: #e8f5e9;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* CSS untuk Profil Card */
+    .profile-card {
+      background-color: #1b5e20; /* hijau gelap */
+      color: #ffffff; /* teks putih */
+      text-align: center;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin: 40px auto;
+      max-width: 400px;
+      animation: fadeInUp 1s ease-in-out;
+      transition: transform 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      margin-bottom: 20px;
+    }
+
+    /* Animasi masuk dari bawah */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+      .welcome-section {
+  background-color: #1b5e20;
+  color: #ffffff;
+  animation: fadeInDown 1.2s ease-in-out;
+  border-bottom: 3px solid #c8e6c9;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.project-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .ml-3 {
+    margin-left: 15px;
+  }
+
+
+    .profile-card {
+      background-color: #1b5e20; /* hijau gelap */
+      color: #ffffff; /* teks putih */
+      text-align: center;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin: 40px auto;
+      max-width: 400px;
+      transition: transform 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 20px;
+    }
+
+    .profile-card p {
+      font-size: 16px;
+    }
+
+    .profile-card .bi {
+      margin-right: 10px;
+    }
+    .footer {
+      background-color: #145a32;
+      padding: 15px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #c8e6c9;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Welcome Section -->
+<section class="welcome-section text-center py-5">
+  <div class="container">
+    <h1 class="display-4 animate-welcome">Selamat Datang !!! 👋 </h1>
+  </div>
+</section>
+
+  <!-- Profil Card -->
+<div class="profile-card">
+  <img src="gambar.jpg" alt="Foto Profil" class="profile-img" />
+  <h2>Fauziah Salsabilla</h2>
+  <p><i class="bi bi-mortarboard-fill"></i> Mahasiswa Teknik Informatika</p>
+  <p><i class="bi bi-building"></i> 🎓 STMIK Mardira Indonesia</p>
+  <p><i class="bi bi-person-vcard-fill"></i>🆔 NIM: 22110034</p>
+</div>
+
+
+  <!-- Tentang Saya -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="mb-4">👤 Tentang Saya</h2>
+      <div class="card">
+        <p>Halo! Saya Fauziah Salsabilla, seorang mahasiswa semester 6 Program Studi Sistem Informasi di STMIK Mardira Indonesia. Saya lahir di Bandung pada tanggal 3 April 2003, usia saya saat ini 22 tahun. Saya memiliki minat besar dalam pengembangan aplikasi dan analisis data. Selain itu, saya gemar membaca, yang membantu saya untuk terus belajar dan berkembang. Saya juga memiliki kemampuan untuk bekerja sama dalam tim dengan baik, serta sangat menghargai disiplin dan kejujuran dalam setiap aspek kehidupan. Sebagai pribadi, saya selalu berusaha untuk memberikan yang terbaik dalam setiap tugas yang dihadapi dan berkomitmen untuk terus meningkatkan diri dalam bidang teknologi informasi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Section -->
+  <section id="cv" class="section">
+    <div class="container">
+      <h2 class="mb-4">📄 Curriculum Vitae - Fauziah Salsabilla</h2>
+
+      <div class="card">
+        <h4><strong>👤 Profil Singkat</strong></h4>
+        <p>Saya adalah mahasiswa semester 6 Program Studi Sistem Informasi di STMIK Mardira Indonesia dengan minat dalam pengembangan aplikasi dan analisis data. Saya memiliki hobi membaca dan senang memperdalam pengetahuan dalam bidang teknologi. Selain itu, saya mampu bekerja secara tim, disiplin, dan sangat menghargai kejujuran.</p>
+      </div>
+
+      <div class="card">
+        <h4><strong>🎓 Pendidikan</strong></h4>
+        <ul>
+          <li><strong>STMIK Mardira Indonesia</strong> – Sistem Informasi (2020 – Sekarang)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4><strong>💡 Keahlian</strong></h4>
+        <ul>
+          <li>Komunikasi & Kolaborasi Tim: Mampu bekerja sama dalam tim, mendengarkan pendapat orang lain, dan berkontribusi secara efektif.</li>
+          <li>HTML, MySQL, Canva, Microsoft Office, Microsoft Excel</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4><strong>🎨🎶 Hobi & Minat</strong></h4>
+        <ul>
+          <li>Membaca buku dan artikel tentang teknologi dan inovasi.</li>
+          <li>Mengikuti perkembangan terbaru dalam pengembangan perangkat lunak dan data science.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQ1QJ2jXlTDAa0F2pcz0s35w99Pb9jjoL5Jmn9hC5pgjRjp6uNE45QxKbxy6RUJ4" crossorigin="anonymous"></script>
+</body>
+
+    </div>
+  </section>
+
+  <!-- Organisasi -->
+  <section id="organisasi" class="section">
+    <div class="container">
+      <h2 class="mb-4">🤝 Pengalaman Organisasi</h2>
+      <div class="card">
+        <p><strong>HIMA STMIK-MI (2022–2023)</strong><br>
+        Posisi: Anggota<br>
+        Tugas: Aktif mengikuti rapat internal, musyawarah, dan kegiatan yang diselenggarakan oleh HIMA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Magang -->
+<section id="magang" class="section">
+  <div class="container">
+    <h2 class="mb-4">💼 Pengalaman/ Proyek</h2>
+
+    <!-- Proyek 1 -->
+    <div class="card mb-3">
+      <div class="d-flex">
+        <div class="ml-3">
+          <p><strong>Website Tugas Kuliah 🌐</strong></p>
+          <ul>
+            <li>Membuat halaman web menggunakan HTML.</li>
+            <li>Memanfaatkan framework Bootstrap untuk styling.</li>
+            <li>Melaksanakan tugas kuliah dengan desain yang responsif dan fungsional.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyek 2 -->
+    <div class="card mb-3">
+      <div class="d-flex">
+        <div class="ml-3">
+          <p><strong>Laporan/Makalah 📄</strong></p>
+          <ul>
+            <li>Menyusun laporan atau makalah menggunakan Microsoft Word.</li>
+            <li>Menulis dengan format akademik yang sesuai dengan standar.</li>
+            <li>Menyelesaikan tugas kuliah dengan analisis dan penyusunan yang mendalam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Penutup -->
+  <section id="penutup" class="section">
+    <div class="container">
+      <h2 class="mb-4">📌 Penutup</h2>
+      <div class="card">
+        <p>Portofolio ini adalah representasi dari kemampuan dan dedikasi saya. Saya berharap dapat bekerja sama dengan Anda untuk mencapai tujuan yang sama.</p>
+        <p>Saya berkomitmen untuk terus meningkatkan kemampuan dan memberikan hasil yang terbaik. Saya berharap dapat menjadi bagian dari tim Anda dan berkontribusi pada kesuksesan bersama.</p>
+        <p>Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut, jangan ragu untuk menghubungi saya. Saya menantikan kesempatan untuk bekerja sama dengan Anda.</p> Terima kasih telah melihat portofolio saya. Saya berharap dapat berkolaborasi dan menciptakan sesuatu yang luar biasa bersama Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+<section id="kontak" class="section">
+  <div class="container">
+    <h2 class="mb-4">📧 Kontak</h2>
+    <div class="card">
+      <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:fauziahsabilla03@gmail.com">fauziahsabilla03@gmail.com</a></p>
+      <p><strong><i class="fas fa-phone-alt"></i> No HP (WA):</strong> <a href="https://wa.me/6288229392093" target="_blank">088229392093</a></p>
+      <p><strong><i class="fab fa-instagram"></i> Instagram:</strong> <a href="https://instagram.com/fauziahhh.03" target="_blank">@fauziahhh.03</a></p>
+      <p><strong><i class="fab fa-github"></i> GitHub:</strong> <a href="https://github.com/FauziahSalsabilla" target="_blank">github.com/FauziahSalsabilla</a></p>
+    </div>    
+  </div>
+</section>
+
+    </div>
+  </section>
+<!-- Quotes -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="quote text-center my-4 p-3 border rounded" style="background-color: #145a32;">
+  <blockquote class="blockquote">
+    <p class="mb-2">"Belajar adalah perjalanan yang tak berujung — mari terus tumbuh, berkembang, dan berkarya!"</p>
+    <footer class="blockquote-footer">Fauziah Salsabilla</footer>
+  </blockquote>
+</div>
+    <p>&copy; 2025 Fauziah Salsabilla - STMIK Mardira Indonesia. </p>
+  </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
